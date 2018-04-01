@@ -32,6 +32,8 @@ when 'debian'
       packages |= %w{ libssl0.9.8 }
   when "precise"
       packages |= %w{ libssl1.0.0 libssl1.0.0-dbg }
+  when "stretch"
+      packages |= %w{ libssl1.1 libssl-dev }
   else
     packages = %w{ libssl1.0.0 libssl1.0.0-dbg }
   end
